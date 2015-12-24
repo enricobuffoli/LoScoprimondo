@@ -1,0 +1,456 @@
+
+
+
+<?php
+
+
+
+
+	
+	include("gestore.php");
+	
+?>
+
+<!DOCTYPE html>
+
+<html  lang="it" >
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> 
+<META charset=UTF-8">  
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>    
+
+
+
+
+<script src="js/resize.js"></script>    
+<script src="js/mobile.js"></script>                
+<script src="js/drag_and_drop.js"></script>
+<script src="js/crea_categorie.js"></script>
+<script src="js/bottoni.js"></script>
+
+
+<link href="css/style.css" rel="Stylesheet" type="text/css"/>
+
+
+
+
+        <title>Lo Scoprimondo</title>
+
+
+
+
+
+    </head>
+
+ 
+ <body >
+
+
+<div id="madre_natura" >
+<a href="javascript:crea_categoria_sfondi('Sfondi');
+javascript:crea_categoria_alberi('Alberi');
+javascript:crea_categoria_anim_domestici('Animali_Domestici');
+javascript:crea_categoria_anim_selvaggi('Animali_Selvaggi');
+javascript:crea_categoria_anim_esotici('Animali_Esotici');
+javascript:crea_categoria_volatile('Volatile');
+javascript:crea_categoria_pesce('Pesce');
+javascript:crea_categoria_anim_preistorico('Animale_Preistorico');" onclick="clickAndDisable(this)" > 
+<p>Madre Natura</p>
+</a></div>
+
+
+<div id="madre_terra"  >
+<a href="javascript:crea_categoria_pers_oggi('Personaggi_Oggi');" onclick="clickAndDisable(this)" >
+<p>Madre terra</p>
+</a></div>
+
+<div id="terra_padri"  >
+<a href="javascript:crea_categoria_pers_storici('Personaggi_Storici'); 
+javascript:crea_categoria_edilizia('Edilizia');" onclick="clickAndDisable(this)" >
+<p>terra dei padri</p>
+</a></div>
+
+
+
+
+
+<div id="madre_patria"  >
+<a href="javascript:crea_categoria_mezzi('Mezzi_Trasporto');
+javascript:crea_categoria_rambo('Rambo');
+javascript:crea_categoria_pers_unif('Personaggi_Uniforme');
+javascript:elimina_categorie2('Personaggi_Storici');  
+javascript:elimina_categorie2('Personaggi_Oggi');" onclick="clickAndDisable(this)" >
+<p  >Madre patria</p>
+</a></div>
+
+
+
+<div id="terra_frontiera_scena"  >
+<a href="javascript:crea_categoria_terra('Terra_Frontiera');
+javascript:elimina_categorie1('Edilizia');
+javascript:elimina_categorie2('Mezzi_Trasporto');
+javascript:elimina_categorie2('Rambo');
+javascript:elimina_categorie2('Personaggi_Uniforme');" onclick="clickAndDisable(this)" >
+<p >terra frontiera</p>
+</a></div>
+
+
+
+
+
+
+
+
+
+
+<div id="in_bottoni">         
+<button class="bottoni" id="annulla">Annulla</button>
+<button class="bottoni" id="ripeti">ripeti</button>
+<button class="bottoni" id="primo_piano">in primo piano</button>
+<button class="bottoni" id="avanti">Porta avanti</button>
+<button class="bottoni" id="indietro">Porta indietro</button>
+<button class="bottoni" id="fondo">in fondo</button>
+<button class="bottoni"id="elimina_elemento()">elimina elemento</button>
+<button class="bottoni"id="elimina_tutto" onclick="elimina_tutto()">elimina tutto</button>
+<button class="bottoni"id="salva" >salva tutto</button>
+</div>
+
+ 
+
+<div id="container_canvas"  class="categorie">
+
+<a href="javascript:cambia('sfondi', 'alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); javascript:cambiaSfondo('Sfondi', 'Alberi Animale_Preistorico Animali_Domestici Animali_Esotici Animali_Selvaggi Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Sfondi"></div>
+</a>
+
+<a href="javascript:cambia('alberi', 'sfondi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Alberi', 'Sfondi Animale_Preistorico Animali_Domestici Animali_Esotici Animali_Selvaggi Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Alberi"></div>
+</a>
+
+
+<a href="javascript:cambia('animale_domestico', 'sfondi alberi animale_preistorico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile');
+javascript:cambiaSfondo('Animali_Domestici', 'Sfondi Animale_Preistorico Alberi Animali_Esotici Animali_Selvaggi Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Animali_Domestici"></div>
+</a>
+
+<a href="javascript:cambia('animale_selvaggio','sfondi alberi animale_preistorico animale_domestico animale_esotico clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile');
+javascript:cambiaSfondo('Animali_Selvaggi', 'Sfondi Animale_Preistorico Alberi Animali_Esotici Animali_Domestici Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Animali_Selvaggi"></div>
+</a>
+
+<a href="javascript:cambia('animale_esotico', 'sfondi alberi animale_preistorico animale_domestico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Animali_Esotici', 'Sfondi Animale_Preistorico Alberi Animali_Selvaggi Animali_Domestici Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Animali_Esotici"></div>
+</a>
+
+
+<a href="javascript:cambia('animale_preistorico', 'sfondi alberi animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Animale_Preistorico', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Animale_Preistorico"></div>
+</a>
+
+
+<a href="javascript:cambia('edilizia', 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile');
+javascript:cambiaSfondo('Edilizia', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Edilizia"></div>
+</a>
+
+
+</div>
+
+
+  
+
+<div id="container_canvas2"  class="categorie2">
+
+
+<a href="javascript:cambia('mezzi_trasporto', 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Mezzi_Trasporto', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Mezzi_Trasporto"></div>
+</a>
+
+
+<a href="javascript:cambia('volatile' , 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce terra_frontiera'); 
+javascript:cambiaSfondo('Volatile', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Mezzi_Trasporto');">
+<div id="Volatile"></div>
+</a>
+
+
+
+
+<a href="javascript:cambia('pesce' , 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo terra_frontiera volatile'); 
+javascript:cambiaSfondo('Pesce', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Rambo Mezzi_Trasporto Terra_Frontiera Volatile');">
+<div id="Pesce"></div>
+</a>
+
+
+<a href="javascript:cambia('personaggi_oggi', 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_storici personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Personaggi_Oggi', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Mezzi_Trasporto Personaggi_Storici Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Personaggi_Oggi"></div>
+</a>
+
+
+
+
+<a href="javascript:cambia('personaggi_storici', 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_uniforme rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Personaggi_Storici', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Uniforme Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Personaggi_Storici"></div>
+</a>
+
+
+
+<a href="javascript:cambia('rambo' , 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Rambo', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Personaggi_Uniforme Pesce Terra_Frontiera Volatile');">
+<div id="Rambo"></div>
+</a>
+
+
+<a href="javascript:cambia('personaggi_uniforme', 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici rambo pesce terra_frontiera volatile'); 
+javascript:cambiaSfondo('Personaggi_Uniforme', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Rambo Pesce Terra_Frontiera Volatile');">
+<div id="Personaggi_Uniforme"></div>
+</a>
+
+
+<a href="javascript:cambia('terra_frontiera' , 'sfondi alberi animale_preistorico animale_domestico animale_esotico animale_selvaggio clown edilizia mezzi_trasporto personaggi_oggi personaggi_storici personaggi_uniforme rambo pesce volatile'); 
+javascript:cambiaSfondo('Terra_Frontiera', 'Sfondi Animali_Esotici Alberi Animali_Selvaggi Animali_Domestici Animale_Preistorico Edilizia Mezzi_Trasporto Personaggi_Oggi Personaggi_Storici Rambo Pesce Personaggi_Uniforme Volatile');">
+<div id="Terra_Frontiera"></div>
+</a>
+
+
+</div>
+ 
+
+<div id="sfondi" style="display:none" >
+<img border="0" class="draggable ui-widget-content ui-draggable"  id="cieloazzurro" src="images/elementi_sfondo/cieloazzurro.png" onmouseup="copia_elemento('cieloazzurro', event)" ontouchend="copia_elemento('cieloazzurro', event)" >
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="cielonotturno" src="images/elementi_sfondo/cielonotturno.png" onmouseup="copia_elemento('cielonotturno', event)" ontouchend"copia_elemento('cielonotturno', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="fiume" 
+src="images/elementi_sfondo/fiume.png" onmouseup="copia_elemento('fiume', event)" ontouchend="copia_elemento('fiume', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="laghetto"
+src="images/elementi_sfondo/laghetto.png" onmouseup="copia_elemento('laghetto', event)" ontouchend="copia_elemento('laghetto', event)" >
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="luna"
+src="images/elementi_sfondo/luna.png" onmouseup="copia_elemento('luna', event)" ontouchend="copia_elemento('luna', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="mare" 
+src="images/elementi_sfondo/mare.png" onmouseup="copia_elemento('mare', event)" ontouchend="copia_elemento('mare', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="montagne"
+src="images/elementi_sfondo/montagne.png" onmouseup="copia_elemento('montagne', event)" ontouchend="copia_elemento('montagne', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="sole" 
+ src="images/elementi_sfondo/sole.png" onmouseup="copia_elemento('sole', event)" ontouchend="copia_elemento('sole', event)">
+
+<img border="0" class="draggable ui-widget-content ui-draggable" id="terreno" 
+src="images/elementi_sfondo/terreno.png"onmouseup="copia_elemento('terreno', event)" ontouchend="copia_elemento('terreno', event)">
+</div>
+
+
+<div id="alberi" style="display:none">
+<img border="0" class="draggable ui-widget-content ui-draggable" id="albero" src="images/alberi/albero.png">
+<img border="0" class="draggable ui-widget-content ui-draggable"src="images/alberi/conifere1.png">
+<img border="0" class="draggable ui-widget-content ui-draggable"src="images/alberi/conifere2.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/alberi/conifere3.png">
+</div>
+
+<div id="animale_preistorico" style="display:none">
+<img border="0" class="draggable" src="images/animale_preistorico/trex.png">
+</div>
+
+<div id="animale_domestico" style="display:none" >
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/agnello.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/agnello_pezzato.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/asino.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/cavallo.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/coniglio.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/gallina.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/maiale.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/pecora.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/tacchino.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/vacca.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_domestici/vitello.png">
+</div>
+
+
+
+<div id="animale_esotico" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_esotici/cammello.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_esotici/scimmia.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/animali_esotici/struzzo.png">
+</div>
+
+<div id="animale_selvaggio" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/cinghiale.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/coccodrillo.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/elefante.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/orsobianco.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/orsobruno.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/pantera.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/rinoceronte.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/animali_selvaggi/tigre.png">
+</div>
+
+<div id="clown" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/clown/clown_augusto.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/clown/clown_bianco.png">
+</div>
+
+<div id="edilizia" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/carcere.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/casa_monofamiliare.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/chiesa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/cinema_teatro.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/comune.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/condominio.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/giocattoli.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/grattacielo.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/lampione.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/linea_elettrica.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/moschea.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/negozio_vestiti.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/ospedale.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/panettiere.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/phonecenter.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/pilastrino.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/pubblicita.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/sala_giochi.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/scuola.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/semaforo.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/sinagoga.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/steccato1.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/steccato2.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/strisce_pedonali.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/tempio_indu.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/edilizia/tunnel.png">
+</div>
+
+
+
+<div id="mezzi_trasportoO" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/aereocivile1.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/aereocivile2.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/aereomilitare1.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/aereomilitare2.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/bicicletta.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/bus.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/camion.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/carrarmato.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/macchina_polizia.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/mercantile1.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/mercantile2.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/moto.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/nave_guerra1.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/mezzi_trasporto/nave_guerra2.png">
+</div>
+
+<div id="personaggi_oggi" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbaasiatica.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbacaucasica.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbaindiana.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbanera.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimboasiatico.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimboindiano.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbocaucasico.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/bimbonero.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/donnaasiatica.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/donnacaucasica.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/donnaindiana.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/donnanera.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/uomoasiatico.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/uomocaucasico.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/uomoindiano.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_oggi/uomonero.png">
+</div>
+
+<div id="personaggi_storici" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/africano.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/guerrieroturco.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/guerrierovichingo.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/pellerossa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/samurai.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/soldatoromano.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_storici/uomoprimitivo.png">
+</div>
+
+
+<div id="personaggi_uniforme" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/ferroviere.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/infermiera.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/poliziotto.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/pompiere.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/prete.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/soldato_aviazione.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/soldato_fanteria.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/soldato_marina.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/suora.png">
+<img border="0" class="draggable ui-widget-content ui-draggable" src="images/personaggi_uniforme/vigile_urbano.png">
+</div>
+
+<div id="rambo" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/bracciodestropiegato.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/bracciodestroteso.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/bracciosinistropiegato.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/bracciosinistroteso.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/busto.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/cartucciera.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/elmetto.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/fasciasudore.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/fucilemitragliatore.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/gambadestrapiegata.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/gambadestratesa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/gambasinistrapiegata.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/gambasinistratesa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/mitra.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/personaggio_rambo/pugnale.png">
+</div>
+
+
+
+<div id="pesce" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/pesce/squalo.png">
+</div>
+
+<div id="terra_frontiera" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable"  src="images/terra_frontiera/bimbapellerossa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/bimbopellerossa.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/cowboy.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/coyote.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/fuococampo.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/giubbablu.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/indianoarco.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/indianoascia.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/squaw.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/tendaindiana.png">
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/terra_frontiera/totem.png">
+</div>
+
+
+
+<div id="volatile" style="display:none" >
+<img border="0"  class="draggable ui-widget-content ui-draggable" src="images/volatile/aquila.png">
+</div>
+
+
+
+
+
+
+
+<div id="container" class="droppable ui-widget-header ui-droppable">
+
+    
+
+    </div>
+	
+
+
+
+    </body>
+</html>
