@@ -1,0 +1,1694 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+    margin:0;
+    padding:0;
+    height:100%;
+
+}
+
+
+body#iniziale{
+	font-family: 'Montserrat', sans-serif;
+	text-align:center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+/* fixes focus scrolling in Safari (OS X) */
+        height:100%;
+	background: #f0f2e6;
+        color: #1b455a;
+        margin: 0;
+	text-decoration:none;	
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+        font-weight: regular;
+        min-height:100%;
+}
+body#grafico{
+	font-family: 'Montserrat', sans-serif;
+	text-align:center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+/* fixes focus scrolling in Safari (OS X) */
+                height:100%;
+	background: #f0f2e6;
+        color: #1b455a;
+        margin: 0;
+	text-decoration:none;	
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+        font-weight: regular;
+min-height:666px;
+        min-width:823px;
+}
+.draggable 
+{ width: 50px; height: 50px; position:relative;
+top:23px;
+}
+/*
+.draggable:hover{
+	width:100px;
+	height:100px;
+	z-index:10px;
+	position:relative;
+	left:-10px;
+	
+}*/
+.condizione 
+{ width: 25px; height: 25px; position:relative;
+top:3px;
+}
+
+
+#form_login label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	float:left;
+	}
+#form_register label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+	
+	#form_register_psicologo label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+
+	#form_register_bs label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+
+	#form_register_PS label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+	
+	
+	#form_register_SU label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+#form_modifica label.error{
+	color: #f33;
+	padding: 0;
+	margin: 2px 0 0 0;
+	font-size: 0.7em;
+	padding-left: 18px;
+	/*background-image: url('error.png');*/
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+	
+
+div#menu{
+	float:left;
+    margin-top:5px;
+	font-size:12px;
+	left:10px;
+}
+
+.bottoni {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 8px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 5px 10px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+ background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
+ background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ background: -ms-linear-gradient(top,  #00adee,  #0078a5);
+ background: -o-linear-gradient(top,  #00adee,  #0078a5);
+ background: linear-gradient(top,  #00adee,  #0078a5);
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ text-transform:uppercase;
+ 
+}
+
+img.dropimg {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #FFF;
+}
+
+
+
+
+#salva {
+    
+    float: left;
+    position: relative;
+}
+
+div#in_bottoni
+{
+	/*position:absolute;
+	top:100px;
+	left:265px;	
+	
+	width: 606px;*/
+	width:800px;
+    height: 44px;
+    margin-left: 20px;
+    
+    float: left;
+    position: relative;
+	left:260px;
+    
+    text-align: center;
+}
+
+div#offline
+{
+	position:absolute;
+	left:150px;
+width:300px; height:300px;	
+
+	
+}
+
+.home-menu{
+width: 400px;
+margin: 5% auto 30px auto;
+}
+
+
+#container2 {
+    background: url("icons/sfondo.jpg")  center #a7dbd8;
+
+    /*min-height:100%; Nicola */
+	background-attachment: fixed;
+    /*margin: 0 auto 0 auto; background-size:cover;*/
+    padding: 32px 30px 20px 30px;  /*Nicola*/
+	background-size:cover;
+}
+
+.nicola{
+	background: url("icons/sfondo.jpg") center #a7dbd8;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90%;
+}
+
+#container {
+
+    margin: 0 auto 0 auto;
+    padding: 15px 30px 0 30px;  
+    
+}
+
+
+.login {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    padding: 10px 0 20px 0;
+    text-align: left;
+    border-top: 1px solid #1b455a;
+}
+p {
+    margin: 10px 30px 10px 30px;
+}
+
+.input {
+    height: 17px;
+    background: #FFF;
+    font-size: 11px;
+    text-align: left;
+    padding: 7px 10px 5px 10px;
+    margin: 0px 30px;
+    color: #1b455a;
+    border: 1px solid #1b455a;
+}
+.input:hover {
+    border: 1px solid #f38630;
+}
+
+input[type=button] {
+    background: #f38630;
+    color: #1b455a;
+    height: 24px;
+    width: 103px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform:uppercase;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+}
+
+input[type=submit] {
+    background: #f38630;
+    color: #1b455a;
+    height: 30px;
+    width: 180px;
+    margin:  15px 30px 0 27px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform:uppercase;
+	font-weight:bold;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+}
+input[type=submit]:hover {
+	background: #efe76a;
+cursor:pointer;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+div#container_top
+{
+	/*height:170px;*/
+	height:35px;
+	
+	
+}
+
+#containerBIG { 
+
+ float: left;
+    position: relative;
+    width: 654px;
+    height: 505px;
+    margin: 0 20px;
+    
+     color: #FFF; /* text color */
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    
+    background: url("bg.png") no-repeat; /* layer fill content */
+
+}
+
+
+ div#containerOLD
+{
+	
+	 float: left;
+    position: relative;
+    width: 654px;
+    height: 505px;
+    margin: 0 20px;
+    
+     color: #FFF; /* text color */
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    
+    background: url("bg.png") no-repeat; /* layer fill content */
+
+
+	   
+}
+
+
+
+ div#containerBIG_commenta
+{
+ float: left;
+    position: relative;
+    width: 654px;
+    height: 505px;
+    margin: 0 20px;
+    
+     color: #FFF; /* text color */
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    
+    background: url("bg.png") no-repeat; /* layer fill content */
+}
+
+#COMINCIA
+{
+	position:relative;
+	top:50px;
+	left:60px;
+}
+.bottone-prova{
+background: #1b455a;
+color:#fff;
+}
+
+.bottone-prova:hover {
+background: #efe76a;
+}
+.bottone_condizione{
+position: relative;
+right: 200px;
+top: 8px;
+height: 14px;
+padding: 1px 15px 18px 10px;
+margin: 0 10px 0 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: bold;
+text-align: left;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+background: #f38630;
+}
+
+.bottone_condizione:hover {
+background: #efe76a;
+}
+.bottone_condizione_suono{
+position: relative;
+float:right;
+top: 8px;
+height: 30px;
+padding: 5px 10px 18px 10px;
+margin: 0 10px 0 0;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+background: #f38630;
+}
+
+.bottone_condizione_suono:hover {
+background: #efe76a;
+}
+
+ div#condizione_necessaria
+ {
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;	
+	position:relative;
+	top:40px; 
+	width:240px;
+	height:420px;
+	border:#666 solid;
+		overflow-y:scroll;
+
+ }
+
+
+
+
+div#madre_natura a
+{
+color: #1b455a;
+
+}
+
+div#scene
+{
+	height: 35px;
+}
+
+.listbutton {
+    height: 20px;
+    padding: 13px 10px 12px 10px;
+    margin:  15px 30px 0 30px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: #f38630; /* layer fill content */
+   /* -moz-box-shadow: 3px 4px 0 #5c7c8b; 
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; 
+    box-shadow: 3px 4px 0 #5c7c8b; */
+}
+
+.listbutton:hover {
+background: #efe76a;
+cursor:pointer;
+
+}
+
+
+
+.button {
+    position: relative;
+    float: left;
+    
+    height: 14px;
+    padding: 7px 10px 12px 10px;
+    margin:  0 10px 0 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: #f38630; /* layer fill content */
+   /* -moz-box-shadow: 3px 4px 0 #5c7c8b; 
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; 
+    box-shadow: 3px 4px 0 #5c7c8b; */
+}
+
+.button:hover {
+background: #efe76a;
+cursor:pointer;
+}
+
+.button-home {
+    position: relative;
+    float: left;
+    
+    height: 15px;
+    padding: 10px 15px 10px 45px;
+    margin:  0 10px 0 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+	
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: url("home.png") left center no-repeat #f38630; /* layer fill content */
+    -moz-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    }
+.button-home:hover {
+    background: url("home.png") left center no-repeat #efe76a; /* layer fill content */
+}
+
+.button-menu {
+    position: relative;
+    float: left;
+    margin:  0 10px 0 0;
+    
+    height: 14px;
+    padding: 11PX 10px 10px 10px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background: #f38630; /* layer fill content */
+   -moz-box-shadow: 3px 4px 0 #5c7c8b; 
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; 
+    box-shadow: 3px 4px 0 #5c7c8b;
+}
+.button-menu:hover {
+    background: #efe76a;
+}
+
+.button-next {
+    position: relative;
+    float: left;
+    margin:  0 10px 0 0;
+    
+    width: 124px;
+    height: 17px;
+    padding: 13px 20px 10px 10px;
+    
+    font-family: "Helvetica";
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+    background: url(next.png) no-repeat;
+}
+.button-next:hover {
+background: url(next-over.png) no-repeat;
+}
+
+.button-active {
+    position: relative;
+    float: left;
+    margin:  0 10px 0 0;
+    
+
+    height: 34px;
+    padding: 13px 10px 10px 30px;
+    
+    font-family: "Helvetica";
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background: url("icons/pencil.png") no-repeat left top #a7dbd8; /* layer fill content */
+}
+
+.button-fatto {
+    position: relative;
+    float: left;
+    margin:  0 10px 0 0;
+    
+    height: 14px;
+    padding: 11PX 10px 10px 30px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background: url("icons/ok.png") no-repeat left center #88b3b0;; /* layer fill content */
+   /* -moz-box-shadow: 3px 4px 0 #5c7c8b; 
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; 
+    box-shadow: 3px 4px 0 #5c7c8b; */
+    /*opacity: .5;*/ 
+}
+
+/*buttone per le scene ancora da fare*/
+.button-todo {
+    position: relative;
+    float: left;
+    margin:  0 10px 0 0;
+    
+    height: 14px;
+    padding: 11PX 10px 10px 10px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background: #88b3b0;; /* layer fill content */
+   /* -moz-box-shadow: 3px 4px 0 #5c7c8b; 
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; 
+    box-shadow: 3px 4px 0 #5c7c8b; */
+    /*opacity: .5;*/ 
+}
+.button-func {
+    position: relative;
+    float: left;
+    
+    height: 22px;
+    padding: 5px 0 5px 10px;
+    margin:  0 20px 0 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    /*font-weight: bold;*/
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: #f38630; /* layer fill content */
+    -moz-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+}
+.button-func:hover {
+    background: #efe76a;
+	cursor:pointer;
+}
+
+/*versione disabilitata*/
+.button-func-dis {
+    position: relative;
+    float: left;
+    
+    height: 24px;
+    padding: 5px 0 5px 10px;
+    margin:  0 20px 0 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    /*font-weight: bold;*/
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: #88b3b0; /* layer fill content */
+}
+div#madre_natura a:hover
+{
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+
+
+div#madre_terra a
+{
+color: #1b455a;
+}
+
+div#madre_terra a:hover
+{
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+div#terra_padri a
+{
+color: #1b455a;
+}
+
+div#terra_padri a:hover
+{
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+
+
+
+div#madre_patria a
+{
+	color: #1b455a;
+
+}
+
+div#madre_patria a:hover
+{
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+div#terra_frontiera_scena a
+{
+color: #1b455a;
+}
+
+div#terra_frontiera_scena a:hover
+{
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+
+#evidenzia
+{
+	position:absolute;
+	left:900px;
+	top:5px;
+
+
+	
+}
+img:hover {
+	cursor:pointer;
+	
+}
+
+img.buttonimg {
+    float: left;
+    margin-right: 10px;
+}
+
+/*bottone più piccolo per le lingue*/
+.lang-button {
+    position: relative;
+    float: left;
+    
+    height: 5px;
+    padding: 4px 10px 12px 10px;
+    margin:  5px 10px 0 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking     outside the border */
+    background: #f38630; /* layer fill content */
+}
+.lang-button:hover {
+    background: #efe76a;
+}
+
+a {
+text-decoration: none;
+}
+
+
+#footer {
+	position: fixed;
+  bottom: 0px;
+  text-align: center;
+    width: 100%;
+    height: 40px;
+    background: #1b455a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding-top: 7px;
+	text-decoration:none;
+}
+/*visualizza l'untente connesso*/
+#benvenuto {
+    position: relative;
+    padding: 10px;
+    float: left;
+    height: 20px;
+    color:#FFF;
+}
+
+
+div#sezione_P
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:200px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+.tabella {
+    width: 600px;
+    margin: 0 auto 0 auto;
+    padding: 30px;
+}
+
+table {
+    border: 0px;
+    text-align: left;
+    font-size: 11px;
+    border-spacing: 2px;
+    margin: 0 auto 0 auto;
+    
+}
+
+td {
+    background: #FFF;
+    padding: 6px;
+}
+
+th {
+    padding: 6px;
+}
+
+tr, td, th {
+    border: 0px;
+}
+
+div#menu_utenti{
+position:relative;
+top:150px;	
+	
+}
+
+	
+table#elimina_utenti{
+position:absolute;
+top:250px;
+	
+}
+
+table#cambia_psicologo{
+position:relative;
+left:70px;
+}
+
+table#cambia_psicologi
+{
+	position:absolute;
+	top:250px;
+	left:300px;
+	
+}
+
+/*div#indietro
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:200px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+div#elementi
+{
+	height:480px;
+	width:180px;
+	position:absolute;
+	top: 170px;
+}*/
+div#elementi {
+    
+	
+	float: left;
+    position: relative;
+	top:-50px;
+    width: 246px;
+  /* width: 270px;*/
+    height: 550px;
+    background: #88b3b0;
+  background: linear-gradient(#8fd3b5, #88b3b0);
+}
+
+
+#main_container {
+	 background: #a7dbd8;
+  background: linear-gradient(#a7dbd8, #8fd3b5);
+    
+    padding-top: 10px;
+    width: 940px;
+    height: 560px;
+    margin-top: 12px;
+    
+    -moz-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    -webkit-box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+    box-shadow: 3px 4px 0 #5c7c8b; /* drop shadow */
+	
+	
+	
+	
+	
+   /* background: #918689;
+    padding-top: 10px;
+    width: 940px;
+    height: 560px;
+    margin-top: 12px;*/
+}
+
+
+div#sfondi
+{
+	position:relative;
+	top:50px;
+	left:10px;
+	height:400px;
+	width:250px;
+	overflow-y:scroll;
+}
+
+
+div#sfondi_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+.sfondi {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.sfondi1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#alberi
+{
+	position:relative;
+	top:100px;
+	left:10px;
+}
+
+
+div#alberi_nome
+{
+	position:relative;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+
+.alberi {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.alberi1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+	
+	.trex {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.trex1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#animale_domestico
+{
+	position:relative;
+	top:50px;
+	left:10px;
+}
+
+
+div#animale_domestico_nome
+{
+	position:relative;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.8em;
+}
+
+
+.animale_domestico {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.animale_domestico1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#animale_selvaggio
+{
+	position:relative;
+	top:80px;
+	left:10px;
+}
+
+
+div#animale_selvaggio_nome
+{
+	position:relative;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+.animale_selvaggio {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.animale_selvaggio1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+
+
+
+div#trex_nome
+{
+	position:absolute;
+	top:-60px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+div#animale_preistorico
+
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+}
+
+div#animale_esotico
+{
+	position:relative;
+	top:100px;
+	left:10px;
+}
+
+div#animale_esotico_nome
+{
+	position:relative;
+	
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+.animale_esotico {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.animale_esotico1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+	
+div#clown
+{
+	position:relative;
+	top:120px;
+	left:10px;
+}
+
+
+
+div#clown_nome
+{
+	position:relative;
+	left:-20px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+.clown {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.clown1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#edilizia_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 1.0em;
+}
+
+
+div#edilizia{
+	
+	overflow-y:scroll;
+	position:relative;
+	top:40px;
+	left:10px;
+	height:400px;
+	width:250px;
+
+	
+	
+}
+
+.edilizia {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.edilizia1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#mezzi_trasporto
+{
+	position:relative;
+	top:50px;
+	left:10px;
+	height:400px;
+	width:250px;
+	overflow-y:scroll;
+}
+
+
+div#mezzi_trasporto_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+.mezzi_trasporto {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.mezzi_trasporto1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#personaggi_oggi
+{
+	position:relative;
+	top:50px;
+	left:10px;
+	height:400px;
+	width:250px;
+	overflow-y:scroll;
+}
+
+
+
+div#personaggi_oggi_nome
+{
+	position:relative;
+	top:0px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+.personaggi_oggi {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.personaggi_oggi1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#questo_io
+{
+	position:relative;
+	top:50px;
+	left:10px;
+	height:400px;
+	width:250px;
+	overflow-y:scroll;
+}
+
+
+
+div#questo_io_nome
+{
+	position:relative;
+	top:0px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+div#personaggi_storici
+{
+	position:relative;
+	top:80px;
+	left:10px;
+}
+
+div#personaggi_storici_nome
+{
+	position:relative;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+.personaggi_storici {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.personaggi_storici1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+
+
+
+div#personaggi_uniforme
+{
+	position:relative;
+	top:50px;
+	left:10px;
+}
+div#personaggi_uniforme_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 0.9em;
+}
+.personaggi_uniforme {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.personaggi_uniforme1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+
+div#rambo
+{
+	position:relative;
+	top:50px;
+	left:10px;
+	height:400px;
+	width:250px;
+	overflow-y:scroll;
+}
+
+div#rambo_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 0.9em;
+}
+.rambo {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.rambo1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+
+div#pesce_nome
+{
+	position:absolute;
+	top:-20px;
+	left:20px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 1.0em;
+}
+
+div#pesce
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+	
+}
+
+.pesce {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.pesce1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+div#terra_frontiera
+{
+	position:relative;
+	top:50px;
+	left:10px;
+}
+
+
+div#terra_frontiera_nome
+{
+	position:relative;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+
+.terra_frontiera {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.terra_frontiera1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+
+
+
+
+div#volatile_nome
+{
+	position:absolute;
+	top:-20px;
+	left:15px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 1.0em;
+}
+
+
+div#volatile
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+	
+}
+
+.volatile {
+  width:70px;
+  height:100px;
+  float:left;
+  margin:4px;
+  background-color:#eff2e7;
+}
+
+.volatile1 
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+	top:25px;
+    margin: 0px 0px 0px 0px;
+	}
+
+#form_modifica_div
+{
+	position:relative;
+	top:-500px;
+	left:260px;
+	
+}
+
+
+table#commenta_scene
+{
+	position:relative;
+	top:-650px;
+	left:120px;
+}
+
+div#commenta_scene_P
+{
+	position:relative;
+	top:-660px;
+	overflow-y: scroll;
+height: 150px;
+background-color: white;
+width: 200px;
+margin-left: 20px;
+	
+}
+.input2 {
+    height: 200px;
+    background: #FFF;
+    font-size: 11px;
+    text-align: left;
+    padding: 7px 10px 5px 10px;
+    margin: 0px 10px;
+    color: #bbb;
+    border: 1px solid #1b455a;
+}
+
+.entry-commento {
+    margin: 10px;
+    padding: 5px 10px;
+   /* background: #f38631;*/
+   background:#dbdbdb;
+    text-align: left;
+}
+
+/*.entry-commento:hover {
+background: #efe76a;
+}
+
+*/
+
+.data {
+    font-size: 10px;
+}
+
+
