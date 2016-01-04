@@ -1,0 +1,1839 @@
+@charset "utf-8";
+/* CSS Document */
+
+.draggable 
+{ width: 50px; height: 50px; position:relative;
+top:3px;
+}
+
+
+
+.bottoni {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 8px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 5px 10px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+ background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
+ background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ background: -ms-linear-gradient(top,  #00adee,  #0078a5);
+ background: -o-linear-gradient(top,  #00adee,  #0078a5);
+ background: linear-gradient(top,  #00adee,  #0078a5);
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ text-transform:uppercase;
+ 
+}
+
+div#in_bottoni
+{
+	position:absolute;
+	top:100px;
+	left:265px;	
+}
+
+div#offline
+{
+	position:absolute;
+	left:150px;
+width:300px; height:300px;	
+
+	
+}
+
+body{
+font-family: Verdana, sans-serif;
+background-color:#FFE5B4;
+text-align:center;
+ /* prevents horizontal scroll bars */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+	height: 100%; /* fixes focus scrolling in Safari (OS X) */
+	height:1500px;
+}
+
+
+div#container_top
+{
+	height:170px;
+	
+}
+
+
+div#containerBIG
+{
+	border:#00FF00 solid;
+	position:absolute;
+	top:130px;
+	left:235px;
+	
+
+}
+ 
+ div#containerOLD
+{
+	border:#00FF00 solid;
+	position:absolute;
+	top:130px;
+	left:235px;
+	
+
+}
+ div#container
+{
+	min-height:800px;
+}
+
+ div#containerBIG_commenta
+{
+	border:#00FF00 solid;
+	position:absolute;
+	top:50px;
+	left:540px;
+	height:500px;
+	width:650px;
+}
+
+ div#scene
+ {
+	position:absolute;
+	top:5px;
+	width:950px;
+	height:100px; 
+ }
+ 
+
+div#madre_natura
+{
+	width:150px;
+	height:70px;
+	position:absolute;
+	top:10px;
+	border:#666 solid;
+	text-transform:uppercase;
+	font-weight:bold;	
+	font-size:0.9em;
+
+} 
+
+
+
+
+div#madre_natura a:visited
+{
+	color:#0F0;
+}
+
+
+div#madre_terra
+{
+	width:150px;
+	height:70px;
+	position:absolute;
+	top:10px;
+	left:180px;
+	border:#666 solid;
+	text-transform:uppercase;
+	font-weight:bold;	
+	font-size:0.9em;
+
+} 
+
+/*div#madre_terra p
+{
+	position:relative;
+	top:20px;
+}
+*/
+div#madre_terra a:hover
+{
+	text-decoration:none;
+	cursor:default;
+	
+}
+div#terra_padri
+{
+	width:150px;
+	height:70px;
+	position:absolute;
+	top:10px;
+	left:360px;
+	border:#666 solid;
+		text-transform:uppercase;
+	font-weight:bold;	
+	font-size:0.9em;
+} 
+
+/*div#terra_padri p
+{
+	position:relative;
+	top:10px;
+}
+*/
+div#terra_padri a:hover
+{
+	text-decoration:none;
+	cursor:default;
+	
+}
+
+div#madre_patria
+{
+	width:150px;
+	height:70px;
+	position:absolute;
+	top:10px;
+	left:540px;
+	border:#666 solid;
+	text-transform:uppercase;
+	font-weight:bold;	
+	font-size:0.9em;
+
+} 
+
+/*div#madre_patria p
+{
+	position:relative;
+	top:20px;
+}*/
+
+div#madre_patria a:hover
+{
+	text-decoration:none;
+	cursor:default;
+	
+}
+div#terra_frontiera_scena
+{
+	width:150px;
+	height:70px;
+	position:absolute;
+	top:10px;
+	left:720px;
+	border:#666 solid;
+	text-transform:uppercase;
+	font-weight:bold;	
+	font-size:0.9em;
+
+} 
+
+/*div#terra_frontiera_scena p
+{
+	position:relative;
+	top:10px;
+}
+*/
+div#terra_frontiera_scena a:hover
+{
+	text-decoration:none;
+	cursor:default;
+	
+}
+
+#evidenzia
+{
+	position:absolute;
+	left:900px;
+	top:5px;
+
+
+	
+}
+
+
+div#logout
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:130px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+div#benvenuto
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:250px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+
+div#sezione_P
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:200px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+table#elimina_utenti{
+position:absolute;
+top:250px;
+	
+}
+
+table#cambia_psicologo{
+position:absolute;
+top:250px;
+}
+
+table#cambia_psicologi
+{
+	position:absolute;
+	top:250px;
+	left:300px;
+	
+}
+
+div#indietro
+{
+	height:36px;
+	text-transform:uppercase;
+	position:absolute;
+	top:05px;
+	left:200px;
+	font-size:10px;
+	font-weight:bold;
+	color:#8c3a3a;
+
+}
+
+div#elementi
+{
+	height:480px;
+	width:180px;
+	position:absolute;
+	top: 170px;
+}
+
+
+table#sfondi1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	}
+table#sfondi1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  overflow-y:scroll;
+  	background-color:#E8D498;
+  }
+table#sfondi1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	left:45px;
+}
+
+table#alberi1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	}
+table#alberi1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  overflow-y:scroll;
+  	background-color:#E8D498;
+  }
+table#alberi1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	left:45px;
+}
+
+table#animale_preistorico1
+{
+	border-collapse:collapse; 
+	}
+table#animale_preistorico1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  	background-color:#E8D498;
+  }
+table#animale_preistorico1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+}
+
+
+table#animale_domestico1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#animale_domestico1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#animale_domestico1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#animale_domestico1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.9em;
+}
+
+table#animale_esotico1
+{
+	border-collapse:collapse; 
+	}
+table#animale_esotico1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  	background-color:#E8D498;
+  }
+table#animale_esotico1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+}
+
+table#clown1
+{
+	border-collapse:collapse; 
+	}
+table#clown1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  	background-color:#E8D498;
+  }
+table#clown1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+}
+
+table#animale_selvaggio1
+{
+	border-collapse:collapse; 
+	display:block;
+
+
+	}
+table#animale_selvaggio1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.5em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#animale_selvaggio1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#animale_selvaggio1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.9em;
+}
+
+table#edilizia1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#edilizia1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.4em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#edilizia1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#edilizia1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	top:-20px;
+	font-size:0.9em;
+}
+
+
+
+
+
+table#mezzi_trasporto1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#mezzi_trasporto1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.5em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#mezzi_trasporto1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#mezzi_trasporto1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.9em;
+}
+
+table#personaggi_oggi1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#personaggi_oggi1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#personaggi_oggi1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#personaggi_oggi1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.9em;
+}
+
+table#personaggi_storici1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+
+}
+table#personaggi_storici1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	text-align:center; 
+	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+	border-collapse:collapse;
+  	overflow-y:scroll;
+  	background-color:#E8D498;
+  
+  }
+table#personaggi_storici1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.8em;
+	}
+
+
+table#personaggi_uniforme1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+	}
+table#personaggi_uniforme1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.6em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#personaggi_uniforme1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#personaggi_uniforme1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.75em;
+}
+
+
+table#rambo1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#rambo1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.5em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#rambo1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#rambo1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	left:60px;
+	font-size:0.9em;
+}
+
+table#pesce1
+{
+	border-collapse:collapse; 
+	}
+table#pesce1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  	background-color:#E8D498;
+  }
+table#pesce1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-40px;
+}
+
+
+table#terra_frontiera1
+{
+	border-collapse:collapse; 
+	overflow-y:scroll;
+	display:block;
+	height:430px;
+
+
+	}
+table#terra_frontiera1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	font-size: 0.5em; 
+	height:80px;
+	width:70px;
+	text-align:center; 
+ 	text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ 	border-collapse:collapse;
+  	background-color:#E8D498;
+  
+  }
+  
+  table#terra_frontiera1 tr
+{
+	width:170px;
+	display:block;
+	
+}
+
+table#terra_frontiera1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-20px;
+	font-size:0.75em;
+}
+
+
+
+table#volatile1
+{
+	border-collapse:collapse; 
+	}
+table#volatile1 td
+{
+	padding:3px 5px; 	
+	font-weight:bold; 
+	height:80px;
+	text-align:center; 
+ text-transform:uppercase;
+	border:2px solid #ADB3AD;
+ border-collapse:collapse;
+  	background-color:#E8D498;
+  }
+  
+table#volatile1 caption
+{
+	font-weight:bold;	
+	text-transform:uppercase; 
+	position:absolute;
+	top:-40px;
+}
+
+
+
+div#sfondi_nome
+{
+	position:absolute;
+	top:-20px;
+	left:45px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+div#sfondi1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#sfondi1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+font-size: 0.5em;
+	position:relative;
+	left:15px;
+	
+	}
+
+
+div#sfondi2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#sfondi2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+font-size: 0.5em;
+	position:relative;
+	left:15px;
+	
+	}
+
+
+
+div#alberi_nome
+{
+	position:absolute;
+	top:-20px;
+	left:45px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+
+
+div#alberi1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#alberi1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+font-size: 0.7em;
+	position:relative;
+	left:10px;
+	
+	
+	}
+
+
+div#alberi2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:100px;
+	top:0px;
+}
+
+
+div#alberi2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+font-size: 0.7em;
+	position:relative;
+	left:10px;
+	
+	}
+
+div#anim_domestico_nome
+{
+	position:absolute;
+	top:-8px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.8em;
+}
+
+
+div#animale_domestico1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#animale_domestico1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+font-size: 0.6em;
+	position:relative;
+	left:10px;
+	
+	}
+
+
+div#animale_domestico2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#animale_domestico2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:15px;
+	
+	}
+
+div#anim_selvaggio_nome
+{
+	position:absolute;
+	top:-8px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+div#animale_selvaggio1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#animale_selvaggio1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:5px;
+	
+	}
+
+
+div#animale_selvaggio2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:100px;
+	top:0px;
+}
+
+
+div#animale_selvaggio2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:0px;
+	}
+
+div#trex_nome
+{
+	position:absolute;
+	top:-60px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+div#animale_preistorico
+
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+	
+	
+
+}
+
+div#animale_preistorico p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.7em;
+	position:relative;
+	left:15px;
+}
+
+div#anim_esotico_nome
+{
+	position:absolute;
+	top:-8px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+
+div#anim_esotico1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:45px;
+	top:25px;
+}
+
+
+div#anim_esotico1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+div#clown_nome
+{
+	position:absolute;
+	top:-8px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+}
+
+
+div#clown1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:45px;
+	top:25px;
+}
+
+
+div#clown1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+
+div#edilizia1
+{
+	overflow-y:scroll
+	
+	
+}
+div#edilizia_nome
+{
+	position:absolute;
+	left:50px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 1.0em;
+}
+
+
+div#edilizia{
+	width:150px;
+	height:480px !important;
+	overflow-y:scroll;
+	position:absolute;
+	top:-10px;
+	
+	
+}
+
+div#edilizia1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:45px;
+	top:25px;
+}
+
+
+div#edilizia1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:15px;
+}
+
+div#mezzi_trasporto_nome
+{
+	position:absolute;
+	top:-20px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+div#mezzi_trasporto1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#mezzi_trasporto1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:-10px;
+}
+
+
+div#mezzi_trasporto2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#mezzi_trasporto2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:0px;
+}
+
+
+div#pers_oggi_nome
+{
+	position:absolute;
+	top:-20px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+
+div#personaggi_oggi1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#personaggi_oggi1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:20px;
+}
+
+
+div#personaggi_oggi2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#personaggi_oggi2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:20px;
+}
+
+
+div#pers_storici_nome
+{
+	position:absolute;
+	top:-20px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-size: 0.9em;
+}
+
+
+
+
+div#personaggi_storici1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#personaggi_storici1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+
+div#personaggi_storici2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:100px;
+	top:0px;
+}
+
+
+div#personaggi_storici2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+div#pers_uniforme_nome
+{
+	position:absolute;
+	top:-20px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 0.9em;
+}
+
+div#personaggi_uniforme1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+
+
+div#personaggi_uniforme1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.7em;
+	position:relative;
+}
+
+
+div#personaggi_uniforme2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:10px;
+}
+
+
+div#personaggi_uniforme2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.7em;
+	position:relative;
+	left:15px;
+}
+
+
+div#rambo_nome
+{
+	position:absolute;
+	top:-20px;
+	left:50px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 0.9em;
+}
+
+
+div#rambo1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#rambo1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:20px;
+}
+
+
+div#rambo2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#rambo2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.5em;
+	position:relative;
+	left:20px;
+}
+
+div#pesce_nome
+{
+	position:absolute;
+	top:-20px;
+	left:20px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 1.0em;
+}
+
+div#pesce
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+	
+}
+
+div#pesce p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.7em;
+	position:relative;
+}
+
+div#terra_nome
+{
+	position:absolute;
+	top:-20px;
+	left:0px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 0.9em;
+}
+
+div#terra_frontiera1
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:10px;
+	top:0px;
+}
+
+
+div#terra_frontiera1 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+
+div#terra_frontiera2
+{
+	width:80px;
+	height:480px;
+	position:absolute;
+	left:80px;
+	top:0px;
+}
+
+
+div#terra_frontiera2 p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.6em;
+	position:relative;
+	left:10px;
+}
+
+
+div#volatile_nome
+{
+	position:absolute;
+	top:-20px;
+	left:15px;
+	text-transform:uppercase;
+	font-weight:bold; 
+		font-size: 1.0em;
+}
+
+
+div#volatile
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:10px;
+	top:150px;
+	
+}
+
+div#volatile p
+{
+	width:10px;
+	height:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 0.7em;
+	position:relative;
+}
+
+
+#cssmenu
+{
+	position:absolute;
+	left:150px;
+	top:50px;
+	width:800px;
+	height:80px;
+	
+}
+#cssmenu ul{
+	margin:205;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	height:36px;
+	position:absolute;
+	display:block;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	background:transparent url('OFF.gif') repeat-x top left;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+#cssmenu li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+#cssmenu li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('DIVIDER.gif') no-repeat top right;
+	}
+#cssmenu li a:hover{
+	background:transparent url('HOVER.gif') no-repeat top right;	
+	}
+
+#cssmenu_utenti
+{
+	position:absolute;
+	left:150px;
+	top:150px;
+	width:800px;
+	height:80px;
+	
+}
+#cssmenu_utenti ul{
+	margin:205;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	height:36px;
+	position:absolute;
+	display:block;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	background:transparent url('OFF.gif') repeat-x top left;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+#cssmenu_utenti li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+#cssmenu_utenti li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('DIVIDER.gif') no-repeat top right;
+	}
+#cssmenu_utenti li a:hover{
+	background:transparent url('HOVER.gif') no-repeat top right;	
+	}
+
+#cssmenu_utenti_S
+{
+	position:absolute;
+	left:150px;
+	top:150px;
+	width:900px;
+	height:80px;
+	
+}
+
+#cssmenu_utenti_S ul{
+	margin:205;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	height:36px;
+	position:absolute;
+	display:block;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	background:transparent url('OFF.gif') repeat-x top left;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+#cssmenu_utenti_S li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+#cssmenu_utenti_S li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('DIVIDER.gif') no-repeat top right;
+	}
+#cssmenu_utenti_S li a:hover{
+	background:transparent url('HOVER.gif') no-repeat top right;	
+	}
+
+
+#cssmenu_elimina_S
+{
+	position:absolute;
+	left:150px;
+	top:150px;
+	width:800px;
+	height:80px;
+	
+}
+#cssmenu_elimina_S ul{
+	margin:205;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	height:36px;
+	position:absolute;
+	display:block;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	background:transparent url('OFF.gif') repeat-x top left;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+#cssmenu_elimina_S li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+#cssmenu_elimina_S li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('DIVIDER.gif') no-repeat top right;
+	}
+#cssmenu_elimina_S li a:hover{
+	background:transparent url('HOVER.gif') no-repeat top right;	
+	}
+
+table#bambino 
+{
+	position:absolute;
+	top:150px;
+}
+
+table#elenco_elimina
+{
+	position:absolute;
+	top:280px;
+}
+
+
+table#elenco_elimina_scene
+{
+	position:absolute;
+	top:280px;
+}
+
+table#elenco_elimina_commenti
+{
+	position:absolute;
+	top:280px;
+}
+
+table#elenco_modifica
+{
+	position:absolute;
+	top:150px;
+}
+
+table#commenta_scene
+{
+	position:absolute;
+	top:150px;
+}
+
+table#commenta_scene_P
+{
+	position:absolute;
+	top:50px;
+	
+}
+
+
+

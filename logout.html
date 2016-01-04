@@ -1,0 +1,14 @@
+
+<?php
+session_start();
+$_SESSION = array();
+session_destroy(); //distruggo tutte le sessioni
+ 
+echo '<script type="text/javascript">alert("Log Out effettuato con successo!!");</script>';
+
+
+echo '<script type="text/javascript">location.href="index.php"</script>';
+
+exit();
+?>
+

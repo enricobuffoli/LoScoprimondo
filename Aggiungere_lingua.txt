@@ -1,0 +1,60 @@
+PER AGGIUNGERE UNA NUOVA LINGUA DI VISUALIZZAZIONE DELLO SCOPRIMONDO E’ NECESSARIO ESEGUIRE LE SEGUENTI ISTRUZIONI:
+
+1: CREARE UN FILE PHP COPIANDOLO DA IT.PHP;
+
+2: SOSTITUIRE LE PAROLE TRA VIRGOLETTE (NELLA PARTE DESTRA DELL’UGUALE) CON LA TRADUZIONE NELLA LINGUA DESIDERATA;
+
+3: NOMINARE IL FILE CON L’ABBREVIAZIONE DELLA LINGUA DESIDERATA( ESEMPIO: ES.PHP)
+
+4: POSIZIONARE IL FILE NELLA CARTELLA ‘lingue’
+
+5: MODIFICARE IL FILE ‘GESTORE.PHP’ COME SEGUE:
+(nell’esempio si suppone di dover aggiungere la lingua spagnola)
+
+5a: sostituire la riga 
+
+$lingue	= array(1=>'Italiano', 'English', 'Tedesco’);
+
+con la seguente:
+
+$lingue	= array(1=>'Italiano', 'English', 'Tedesco’,’Spagnolo’);
+
+5b: sostituire la riga 
+
+$flags	= array(1=>'ITALIANO', 'INGLESE', 'TEDESCO');
+
+con la seguente
+
+$flags	= array(1=>'ITALIANO', 'INGLESE', 'TEDESCO’,’SPAGNOLO’);
+
+5c: aggiungere la seguente riga all’istruzione ‘switch’
+
+(posizionare dopo la seguente riga 
+				case 3:
+				include "lingue/de.php";
+				break;
+
+)
+
+			case 4:
+				include "lingue/es.php";
+				break;
+
+NB: il nome es.php deve essere lo stesso dato al file creato in precedenza al punto 1.
+
+6:  SALVARE IL FILE 
+
+
+PER RIVISUALIZZARE ANCHE LA LINGUA INGLESE E’ NECESSARIO ESEGUIRE LE SEGUENTI ISTRUZIONI:
+
+1: APRIRE IL FILE GESTORE.PHP
+
+2:  DECOMMENTARE LA PRIMA RIGA ( $lingue	= array(1=>'Italiano', 'English', 'Tedesco’);)
+
+3:  COMMENTARE LA SECONDA RIGA ($lingue	= array(1=>'Italiano', 'Tedesco’);)
+
+4: DECOMMENTARE LA RIGA 6 ($flags	= array(1=>'ITALIANO', 'INGLESE', 'TEDESCO'); )
+
+5: COMMENTARE LA RIGA 7 ( $flags	= array(1=>'ITALIANO', 'TEDESCO’);)
+
+6: SALVARE IL FILE.
